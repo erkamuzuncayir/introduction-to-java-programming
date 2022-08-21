@@ -1,0 +1,118 @@
+REVIEW QUESTIONS - Unit 1
+
+Sections 1.2–1.4
+1.1 Define hardware and software.
+	Hardware is the physical components of the computer. Software(Program) is a ordered commands whose written by programmer for the manipulate hardware and the reach desired result.
+
+1.2 List the main components of the computer.
+	Central processing unit (CPU), memory, storage devices, input and output devices and communication devices are the main components of the computer.
+
+1.3 Define machine language, assembly language, and high-level programming language.
+	Machine language is the language understandable for computer itself and consist of binary commands. 
+	Assembly language is a low level language that convert binary commands as simple words (like ADD, SUB) to  make machine code easier to understand.
+	High-level language is a English-like programming language therefore it is easier readable for humans and make programming easier relative to other type of languages.
+
+1.4 What is a source program? What is a compiler?
+	Source program is commands (code) written by the programmer in a high-level language. Compiler is a translate program and translate source program to assembly language or machine language depend on various circumstances.
+
+1.5 What is the JVM?
+	JVM(Java Virtual Machine) is a program and interprets Java bytecode.
+
+1.6 What is an operating system?
+	Operating system is computer's manager and controller software. It's job is managing computer's resources and activities.
+
+Sections 1.5–1.6
+
+1.7 Describe the history of Java. Can Java run on any machine? What is needed to run Java on a computer?
+	Java firstly created for a embedded chips but then redesigned for Internet applications. Java can run on any machine that contain Java Virtual Machine.
+
+1.8 What are the input and output of a Java compiler?
+	Source code (.java file) is the input of Java compiler and bytecode (.class) is the output of Java compiler.
+
+1.9 List some Java development tools. Are tools like NetBeans and Eclipse different languages from Java, or are they dialects or extensions of Java?
+	JetBrains IntelliJ IDEA is a IDE for Java, VS Code is a text editor that can be used for development purposes in Java.
+
+1.10 What is the relationship between Java and HTML?
+	HTML is a mark-up language and it's structure static but Java turn HTML's static structure to dynamic for creating alive websites.
+
+Sections 1.7–1.9
+
+1.11 Explain the Java keywords. List some Java keywords you learned in this chapter.
+	Java keywords have specific meaning to the compiler and cannot bu used other purposes in the program. "public", "static", "void". 
+
+1.12 Is Java case sensitive? What is the case for Java keywords?
+	Java is case sensitive programming language. Java keywords must write lowercase, therefore we can use these keywords for other purposes as uppercase.
+
+1.13 What is the Java source filename extension, and what is the Java bytecode file-name extension?
+	Java source filename extension is ".java" and Java bytecode filename extension is ".class".
+
+1.14 What is a comment? Is the comment ignored by the compiler? How do you denote a comment line and a comment paragraph?
+	Comments are text written on a source code but will not compile. We can write comments for variety of purposes but generally programmer use comments for breadcrumbs or guide for later programmers.
+	"//" statement is using for comment line and with start "/* and with end "*/" statements are using for comment paragraph.
+1.15 What is the statement to display a string on the console? What is the statement to display the message “Hello world” in a message dialog box?
+	"System.out.println("Welcome to Java!");" is the statement for the display on the console.
+	"JOptionPane.showMessageDialog(null, "Welcome to Java!");" is the statement for the display in a message dialog box.
+
+1.16 The following program is wrong. Reorder the lines so that the program displays morning followed by afternoon.
+	public static void main(String[] args) {
+	}
+
+public class Welcome {
+	System.out.println("afternoon");
+	System.out.println("morning");
+}
+---
+	Solution:
+public class Welcome 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("morning");
+		System.out.println("afternoon");
+	}
+}
+
+1.17 Identify and fix the errors in the following code:
+1 public class Welcome {
+2 	public void Main(String[] args) {
+3 		System.out.println('Welcome to Java!);
+4 	}
+5 )
+--
+	Solution:
+public class Welcome 
+{
+	public void main(String[] args) 
+	{
+		System.out.println("Welcome to Java!");
+	}
+}
+
+1.18 What is the command to compile a Java program? What is the command to run a Java program?
+	"javac" is a command to compile and "java" is a command to run a Java program.
+
+1.19 If a NoClassDefFoundError occurs when you run a program, what is the cause of the error?
+	If a source program has no class then NoClassDefFoundError occurs.
+		
+1.20 If a NoSuchMethodError occurs when you run a program, what is the cause of the error?
+	If a source program has no main method then NoSuchMethodError occurs.
+
+1.21 Why does the System class not need to be imported?
+	Because System class is implicitly imported in every Java source program.
+
+1.22 Are there any performance differences between the following two import statements?
+import javax.swing.JOptionPane;
+import javax.swing.*;
+	Imports are resolved at compile time therefore any performance difference didn't calculated in both of these import statements at runtime.
+
+1.23 Show the output of the following code:
+public class Test {
+public static void main(String[] args) {
+System.out.println("3.5 * 4 / 2 – 2.5 is ");
+System.out.println(3.5 * 4 / 2 – 2.5);
+}
+}
+---
+	Solution:
+	3.5 * 4 / 2 – 2.5 is 
+	4.5

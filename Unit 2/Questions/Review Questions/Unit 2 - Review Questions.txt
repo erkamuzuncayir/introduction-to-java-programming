@@ -1,0 +1,380 @@
+REVIEW QUESTIONS
+
+Sections 2.2–2.7
+
+2.1:Which of the following identifiers are valid? Which are Java keywords?
+applet, Applet, a++, ––a, 4#R, $4, #44, apps
+class, public, int, x, y, radius
+
+	Sol:
+		These identifiers (applet, Applet, $4, apps, x, y, radius) are valid.
+		class, public, int are Java keywords.
+
+2.2:Translate the following algorithm into Java code:
+■ Step 1: Declare a double variable named miles with initial value 100;
+■ Step 2: Declare a double constant named MILES_PER_KILOMETER with value 1.609;
+■ Step 3: Declare a double variable named kilometers, multiply miles and MILES_PER_KILOMETER, and assign the result to kilometers.
+■ Step 4: Display kilometers to the console.
+What is kilometers after Step 4?
+
+	Sol:
+		Step 1: double miles = 100;
+		Step 2: final double MILES_PER_KILOMETER = 1.609;
+		Step 3: double kilometers = miles * MILES_PER_KILOMETER;
+		Step 4: System.out.print(kilometers);
+	 
+		Kilometer is 160.9;
+	 
+2.3:What are the benefits of using constants? Declare an int constant SIZE with value 20.
+	
+	Sol:	
+		Sometimes using constants are good for efficiency in resources. On the other hand sometimes we need a value can not to be change and can reach this value easily, constants are important especially at these type of situations.
+		final int SIZE = 20;
+	
+2.4:Assume that int a = 1 and double d = 1.0, and that each expression is independent. What are the results of the following expressions?
+
+	Sol:
+a = 46 / 9; 
+	Sol:
+		a = 5
+a = 46 % 9 + 4 * 4 - 2; 
+	Sol:
+		a = 15
+a = 45 + 43 % 5 * (23 * 3 % 2);
+	Sol:
+		a = 48
+a %= 3 / a + 3;
+	Sol:
+		a = 0
+d = 4 + d * d + 4;
+	Sol:
+		d = 9.0
+d += 1.5 * 3 + (++a);
+	Sol:
+		d = 15.5
+d -= 1.5 * 3 + a++;
+	Sol:
+		d = 9.0
+
+2.5:Show the result of the following remainders.
+
+56 % 6
+	Sol:
+		2
+78 % -4
+	Sol:	
+		2
+-34 % 5
+	Sol:
+		-4
+-34 % -5
+	Sol:
+		-4
+5 % 1
+	Sol:
+		0
+1 % 5
+	Sol:
+		1
+
+2.6:If today is Tuesday, what will be the day in 100 days?
+	
+	Sol:
+		100 % 7 = 2
+		Tuesday + 2 Day = Thursday
+		
+2.7:Find the largest and smallest byte, short, int, long, float, and double.
+Which of these data types requires the least amount of memory?
+
+	Sol:	
+		byte = -128 / 127
+		short = -32,768 / 32,767
+		int = -2,147,483,648 / 2,147,483,647
+		long = -9,223,372,036,854,775,808 / 9,223,372,036,854,775,807
+		float = 2^-149 / (2-2^-23)*2^127
+		double = 2^-1074 / (2-2^-52)*2^1023
+		
+		Byte need at least amount of memory because of the how many data it store.
+		
+2.8:What is the result of 25 / 4? How would you rewrite the expression if you wished the result to be a floating-point number?
+
+	Sol:	
+		6
+		If we write like 25.0 / 4, 25 / 4.0 or 25.0/4.0 we can get the desired floating-point result.
+		
+2.9:Are the following statements correct? If so, show the output.
+
+System.out.println("25 / 4 is " + 25 / 4);
+	Sol:
+		False because of the using integer.
+System.out.println("25 / 4.0 is " + 25 / 4.0);
+	Sol:	
+		Correct: 25 / 4.0 is 6.25
+System.out.println("3 * 2 / 4 is " + 3 * 2 / 4);
+	Sol:	
+		False because of the using integer.
+System.out.println("3.0 * 2 / 4 is " + 3.0 * 2 / 4);
+	Sol:	
+		Correct: 3.0 * 2 / 4 is 1.5
+
+2.10:How would you write the following arithmetic expression in Java?
+
+	Sol:
+		(4 / 3 * ( r + 34)) - 9 * ( a + bc ) + ( 3 + d ( 2 + a ) ) / ( a + bd )
+		
+2.11:Suppose m and r are integers. Write a Java expression for mr^2 to obtain a floating-point result.
+
+	Sol:
+		m * r * r * 1.0
+		
+2.12:Which of these statements are true?
+(a) Any expression can be used as a statement.
+(b) The expression x++ can be used as a statement.
+(c) The statement x = x + 5 is also an expression.
+(d) The statement x = y = x = 0 is illegal.
+
+	Sol:	
+		(a): a + 5; is an expression but not a statement.
+		b and c are true.
+		(d): this is legal because this expression set x to 0 and then set y to x and lastly set x to y.
+		
+2.13:Which of the following are correct literals for floating-point numbers?
+12.3, 12.3e+2, 23.4e-2, –334.4, 20, 39F, 40D
+
+	Sol:	
+		All can be usable.
+	
+2.14:Identify and fix the errors in the following code:
+1 public class Test {
+2 	public void main(string[] args) {
+3 		int i;
+4 		int k = 100.0;
+5 		int j = i + 1;
+6
+7 		System.out.println("j is " + j + " and
+8 		k is " + k);
+9 	}
+10 }
+
+	Sol:	
+		public class Test 
+		{
+			public void main( string[] args ) 
+			{
+				int i = 0;
+				int k = 100;
+				int j = i + 1;
+				
+				System.out.println( "j is " + j + " and k is " + k );
+ 			}
+		}
+
+2.15:How do you obtain the current minute using the System.currentTimeMillis() method?
+
+	Sol:
+		// Obtain the total milliseconds since midnight, Jan 1, 1970
+		long totalMilliseconds = System.currentTimeMillis();
+
+		// Obtain the total seconds since midnight, Jan 1, 1970
+		long totalSeconds = totalMilliseconds / 1000;
+
+		// Compute the current second in the minute in the hour
+		long currentSecond = ( int )( totalSeconds % 60 );
+
+		// Obtain the total minutes
+		long totalMinutes = totalSeconds / 60;
+
+		// Compute the current minute in the hour
+		long currentMinute = totalMinutes % 60;
+		
+Section 2.11
+
+2.16:Can different types of numeric values be used together in a computation?
+	
+	Sol:
+		Yes, whether can be using with explicitly type casting or automatically narrowing (implicitly casting).
+	
+2.17:What does an explicit conversion from a double to an int do with the fractional part of the double value? Does casting change the variable being cast?
+
+	Sol:
+		Fractional part will be truncated. Therefore our value will be corrupted.
+		
+2.18:Show the following output.
+float f = 12.5F;
+int i = (int)f;
+System.out.println("f is " + f);
+System.out.println("i is " + i);
+
+	Sol:
+		f is 12.5
+		i is 12
+		
+2.19:Use print statements to find out the ASCII code for '1', 'A', 'B', 'a', 'b'. Use print statements to find out the character for the decimal code40, 59, 79, 85, 90. Use print statements to find out the character for the hexadecimal code 40, 5A, 71, 72, 7A.
+
+	Sol:
+	
+		System.out.println( ( int ) '1' );
+		System.out.println( ( int ) 'A' );
+		System.out.println( ( int ) 'B' );
+		System.out.println( ( int ) 'a' );
+		System.out.println( ( int ) 'b' );
+
+		System.out.println( ( char ) 40 );
+		System.out.println( ( char ) 59 );
+		System.out.println( ( char ) 79 );
+		System.out.println( ( char ) 85 );
+		System.out.println( ( char ) 90 );
+
+		System.out.println( ( char ) 0X40 );
+		System.out.println( ( char ) 0X5A );
+		System.out.println( ( char ) 0X71 );
+		System.out.println( ( char ) 0X72 );
+		System.out.println( ( char ) 0X7A );
+		
+2.20:Which of the following are correct literals for characters? 
+'1', '\u345dE', '\u3fFa', '\b', '\t'
+
+	Sol:
+		\u345dE is wrong because hex numbers are contain 4 numbers.
+		
+2.21:How do you display characters \ and "?
+
+	Sol:
+		System.out.println( '\\' );
+		System.out.println( '\"' );
+		
+2.22:Evaluate the following:
+int i = '1';
+int j = '1' + '2';
+int k = 'a';
+char c = 90;
+		
+	Sol: 
+	i is 49
+	j is 99
+	k is 97
+	c is Z
+	
+2.23:Can the following conversions involving casting be allowed? If so, find the converted result.
+
+	Sol:
+		char c = 'A';
+		i = ( int ) c;
+			i is 65
+		
+		float f = 1000.34f;
+		int i = ( int ) f;
+			i is 1000
+			
+		double d = 1000.34;
+		int i = ( int ) d;
+			i is 1000
+			
+		int i = 97;
+		char c = ( char ) i;
+			c is a
+			
+2.24:Show the output of the following program:
+public class Test {
+public static void main(String[] args) {
+char x = 'a';
+char y = 'c';
+System.out.println(++x);
+System.out.println(y++);
+System.out.println(x - y);
+}
+}
+
+	Sol:
+		b 
+		c
+		-2
+		
+2.25:Show the output of the following statements (write a program to verify your result):
+System.out.println("1" + 1);
+System.out.println('1' + 1);
+System.out.println("1" + 1 + 1);
+System.out.println("1" + (1 + 1));
+System.out.println('1' + 1 + 1);
+
+	Sol:
+		11
+		50
+		111
+		12
+		51
+		
+2.26:Evaluate the following expressions (write a program to verify your result):
+1 + "Welcome " + 1 + 1
+1 + "Welcome " + (1 + 1)
+1 + "Welcome " + ('\u0001' + 1)
+1 + "Welcome " + 'a' + 1
+
+	Sol:
+		1Welcome 11
+		1Welcome 2
+		1Welcome 2
+		1Welcome a1
+		
+2.27:What are the naming conventions for class names, method names, constants, and variables? Which of the following items can be a constant, a method, a variable, or a class according to the Java naming conventions?
+MAX_VALUE, Test, read, readInt
+	
+	Sol:
+		MAX_VALUE is constant name.
+		Test is class name.
+		read and readInt are either a method or a variable name.
+		
+2.28:Reformat the following program according to the programming style and docu-
+mentation guidelines. Use the next-line brace style.
+public class Test
+{
+	// Main method
+	public static void main(String[] args) {
+	/** Print a line */
+	System.out.println("2 % 3 = "+2%3);
+	}
+}
+
+	Sol:
+		public class Test
+		{
+			// Main method
+			public static void main( String[] args ) 
+			{
+				// Print a line
+				System.out.println( "2 % 3 = " + 2 % 3 );
+			}
+		}
+
+2.29:Describe syntax errors, runtime errors, and logic errors.
+
+	Sol:
+		Syntax errors occure when program compile. Wrong syntax use cause them.
+		Runtime errors occure when program run. Wrong input enter or zero-divison may cause them.
+		Logic errors are knowing as bugs. Program compile and run completely fine but received result is not desired result. Program itself logically not correct.
+		
+Section 2.18
+
+2.30:Why do you have to import JOptionPane but not the Math class?
+
+	Sol:
+		Because Math class is  part of the java.lang package therefore it is implicitly imported but JOptionPane is not.
+		
+2.31:How do you prompt the user to enter an input using a dialog box?
+
+	Sol:
+		One is to use a statement like this one:
+		JOptionPane.showInputDialog(x);
+		where x is a string for the prompting message.
+		The other is to use a statement such as the following:
+		String string = JOptionPane.showInputDialog(null, x, y, JOptionPane.QUESTION_MESSAGE);
+		
+2.32:How do you convert a string to an integer? How do you convert a string to a double?
+
+	Sol:
+		String someNumber = "2312";
+		String someFloatingNumber = "2324.23";
+		
+		int numbers = Integer.parseInt( someNumber );
+		
+		double floatingNumbers = Double.parseDouble( someFloatingNumber );

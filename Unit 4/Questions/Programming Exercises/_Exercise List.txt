@@ -1,0 +1,51 @@
+// Unit 4 - Exercise List
+
+4.1 - CountNumbersComputeAverage.java
+4.2 - RepeatingAdditions.java
+4.3 - ConversionKilogramToPound.java
+4.4 - ConversionMileToKilometer.java
+4.5 - ConversionKilogramToPoundSideBySide.java
+4.6 - ConversionMileToKilometerSideBySide.java
+4.7 - ComputingFutureTuition.java
+4.8 - FindingHighestScore.java
+4.9 - FindingHighestTwoScore.java
+4.10 - FindingNumbersDivisibleBy5And6.java
+4.11 - FindingNumbersDivisibleBy5Or6NotBoth.java
+4.12 - FindingSmallestSquareBiggerThan12000.java
+4.13 - FindingBiggestCubicSmallerThan12000.java
+4.14 - DisplayingASCIICharacterTable.java
+4.15 - ComputingGCD.java
+4.16 - FindingFactorsOfAnInteger.java
+4.17 - DisplayingPyramid.java
+4.18 - PrintingFourPatterns.java // Book wants separate programs but I code all of them in one program.
+4.19 - PrintingPyramidTwo.java
+4.20 - PrintingPrimeNumbers.java
+4.21 - ComparingLoansWithInterestRates.java
+4.22 - AmortizationLoan.java
+4.23 - ObtainingMoreAccurateResults.java
+4.24 - SummingSeries.java
+4.25 - ComputingPi.java
+4.26 - ComputingEuler.java
+4.27 - DisplayingLeapYears.java
+4.28 - DisplayingFirstDaysOfEachMonth.java
+4.29 - DisplayingCalendar.java
+4.30 - ComputingCompoundValue.java
+4.31 - ComputingCDValue.java
+4.32 - Lottery.java
+4.33 - FindingPerfectNumber.java
+4.34 - ScissorRockPaper.java
+4.35 - ComputingSummation.java
+4.36 - CheckingISBN.java
+4.37 - IntegerToBinary.java
+4.38 - IntegerToHex.java
+4.39 - FindingSalesAmount.java
+4.40 - HeadOrTail.java
+4.41 - OccurenceOfMaxNumbers.java
+4.42 - FindingSalesAmountModified.java
+4.43 - ClockCountdown.java
+4.44 - MonteCarloSimulation.java
+4.45 - Combinations.java
+4.46 - BitLevelOperations.java
+
+
+
