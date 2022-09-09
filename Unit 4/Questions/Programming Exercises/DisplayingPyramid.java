@@ -1,15 +1,24 @@
 // Unit 4 - Exercise 17
 
+import java.util.Scanner;
+
 public class DisplayingPyramid
 {
 	public static void main ( String[] args )
 	{
+		// Creates a Scanner
+		Scanner input = new Scanner ( System.in );
+		
+		// Prompts the user to enter a number for pyramid floor
+		System.out.print( "How many floor will be pyramid? " );
+		int pyramidFloor = input.nextInt();
+		
 		// Creates rows
-		for ( int row = 1 ; row <= 15 ; row++ )
+		for ( int row = 1 ; row <= pyramidFloor ; row++ )
 		{
 		
 			// Prints spaces
-			for ( int space = 0 ; space < 15 - row  ; space++ )
+			for ( int space = 0 ; space < pyramidFloor - row  ; space++ )
 			{
 				System.out.print("\t");
 			}

@@ -14,11 +14,11 @@ public class ConversionMileToKilometerSideBySide
 		// Displays the table
 		System.out.println( "Miles		Kilometers	Kilometers	Miles\n" );
 		
-		for ( int leftIncrement = 1 , rightIncrement = 20 ; leftIncrement < 11 ;
-				 leftIncrement++ , rightIncrement += 5 )
+		for ( int mileIncrement = 1 , kilometerIncrement = 20 ; mileIncrement < 11 ;
+				 mileIncrement++ , kilometerIncrement += 5 )
 		{
-			milesOne = leftIncrement;
-			kilometerTwo = rightIncrement;
+			milesOne = mileIncrement;
+			kilometerTwo = kilometerIncrement;
 			
 			kilometerOne = milesOne * Multiplier;
 			milesTwo = kilometerTwo / Multiplier;

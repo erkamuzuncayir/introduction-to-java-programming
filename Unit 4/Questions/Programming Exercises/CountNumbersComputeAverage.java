@@ -11,7 +11,7 @@ public class CountNumbersComputeAverage
 		
 		int positiveCount = 0;
 		int negativeCount = 0;
-		double sumOfNumbers = 0;
+		int sumOfNumbers = 0;
 		double average = 0;
 		int number = 0;
 		
@@ -31,12 +31,12 @@ public class CountNumbersComputeAverage
 		} while ( number != 0 );
 		
 		// Computes average
-		average = sumOfNumbers / ( positiveCount + negativeCount );
+		average = (double)sumOfNumbers / ( positiveCount + negativeCount );
 		
 		// Displays result
 		System.out.printf( "The number of positives is %d\n" , positiveCount );
 		System.out.printf( "The number of negatives is %d\n" , negativeCount );
-		System.out.printf( "The total is %.0f\n" , sumOfNumbers );
+		System.out.printf( "The total is %d\n" , sumOfNumbers );
 		System.out.printf( "The average is %.2f\n" , average );
 	}
 }

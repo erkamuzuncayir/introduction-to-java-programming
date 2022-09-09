@@ -10,23 +10,22 @@ public class DisplayingFirstDaysOfEachMonth
 		Scanner input = new Scanner ( System.in );
 		
 		// Prompts user to enter the year and first day of the year
-		System.out.print( "Please enter year and first day of the year (Enter 0 to 6 for days.): " );
+		System.out.print( "Please enter year: " );
 		int year = input.nextInt();
+		System.out.print( "Please enter first day of the year (Enter 0 to 6 for days.): " );		
 		int day = input.nextInt();
 		
 		// Determines which month of the year
 		for ( int i = 1 ; i <= 12 ; i++ )
 		{
-			if ( ( i == 2 ) && ( year % 4 != 0 ) )
-				{}
-			else if ( ( i == 2 ) && ( year % 4 == 0 ) )
-				day++;
+			if ( ( i == 2 ) && ( year % 4 == 0 ) )
+				day ++;
 			else if ( ( i == 4 ) || ( i == 6 ) || 
 						( i == 9 ) || ( i == 11 ) )
 				day += 2;
-			else if ( i == 1 )
-				{}
-			else
+			else if ( ( i == 3 ) || ( i == 5 ) || 
+						( i == 7 ) || ( i == 8 ) ||
+						( i == 10 ) || ( i == 12 ) )
 				day += 3;
 				
 			// Determines which day of the week

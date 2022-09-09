@@ -14,9 +14,12 @@ public class DisplayingCalendar
 		int nextMonthStartDay = 0;
 		
 		// Prompts user to enter the year and first day of the year
-		System.out.print( "Please enter year and first day of the year (Enter 0 to 6 for days.): " );
+		System.out.print( "Please enter year: " );
 		int year = input.nextInt();
+		System.out.print( "Please enter first day of the year (Enter 0 to 6 for days.): " );		
 		int day = input.nextInt();
+		
+		nextMonthStartDay = day;
 		
 		// Determines which month of the year
 		for ( int i = 1 ; i <= 12 ; i++ )
@@ -33,11 +36,6 @@ public class DisplayingCalendar
 			{
 				nextMonthStartDay += 2;
 				dayCountOfTheMonth = 30;
-			}
-			else if ( i == 1 )
-			{
-				nextMonthStartDay += 2;
-				dayCountOfTheMonth = 31;
 			}
 			else
 			{
@@ -83,7 +81,7 @@ public class DisplayingCalendar
 			System.out.println( "Sun\tMon\tTue\tWed\tThu\tFri\tSat" );
 			
 			// Displays table
-			for ( int k = 1 ; k < day + 1 ; k++ )
+			for ( int k = 0 ; k < day ; k++ )
 			{
 				System.out.print("\t");
 			}

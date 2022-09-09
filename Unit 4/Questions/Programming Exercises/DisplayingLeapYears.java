@@ -7,7 +7,7 @@ public class DisplayingLeapYears
 		int checker = 0;
 		
 		// Calculate leap years
-		for ( int i = 2001 ; i <= 2100 ; i++ )
+		for ( int i = 2001 ; i < 2100 ; i++ )
 		{
 			if ( i % 4 == 0 )
 			{

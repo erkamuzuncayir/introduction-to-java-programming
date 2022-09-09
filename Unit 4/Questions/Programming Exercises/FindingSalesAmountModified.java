@@ -22,12 +22,13 @@ public class FindingSalesAmountModified
 			if ( commisionAmount > commisionSought )
 				break;
 			sale += 0.01;
-			if ( sale <= 5000 )
-				commisionAmount = sale * 0.08;
-			else if ( sale <= 10000 )
-				commisionAmount = sale * 0.1;
+			if( sale > 10000 )
+				commisionAmount = ( 5000 * 0.08 ) + ( 5000 * 0.1 )
+									 + ( ( sale - 10000 ) * 0.12 );
+			else if( sale > 5000 )
+				commisionAmount = ( 5000 * 0.08 ) + ( ( sale - 5000 ) * 0.1 );
 			else
-				commisionAmount = sale * 0.12;
+				commisionAmount = sale * 0.08;
 		}
 		
 		// Displays result

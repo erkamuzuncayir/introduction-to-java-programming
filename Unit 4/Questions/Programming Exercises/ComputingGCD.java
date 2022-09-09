@@ -26,9 +26,7 @@ public class ComputingGCD
 		for ( int i = 1 ; i <= smallestNumber ; i++ )
 		{
 			if ( ( numberOne % i == 0 ) && ( numberTwo % i == 0 ) )
-			{	
 				gcd = i;
-			}
 		}
 		
 		// Displays result

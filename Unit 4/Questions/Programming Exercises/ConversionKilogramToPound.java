@@ -11,7 +11,7 @@ public class ConversionKilogramToPound
 		// Displays table
 		System.out.println( "Kilograms	Pounds\n" );
 		
-		for ( int kilograms = 1 ; kilograms < 200 ; kilograms++ )
+		for ( int kilograms = 1 ; kilograms < 200 ; kilograms += 2 )
 		{
 			pounds = kilograms * Multiplier;
 			System.out.printf( "%d		%.1f\n" , kilograms , pounds );

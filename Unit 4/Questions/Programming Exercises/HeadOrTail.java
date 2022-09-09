@@ -5,7 +5,6 @@ public class HeadOrTail
 	public static void main ( String[] args )
 	{
 		final int Head = 0;
-		final int Tail = 1;
 		
 		int headCount = 0;
 		int tailCount = 0;
@@ -15,7 +14,7 @@ public class HeadOrTail
 		{
 			int result = ( int ) ( ( Math.random() * 10 ) % 2 );
 			
-			if ( result == 0 )
+			if ( result == Head )
 				headCount++;
 			else
 				tailCount++;

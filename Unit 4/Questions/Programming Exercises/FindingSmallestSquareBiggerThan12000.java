@@ -4,17 +4,19 @@ public class FindingSmallestSquareBiggerThan12000
 {
 	public static void main ( String[] args )
 	{
-		double number = 0;
-		double squareOfNumber = 0;
+		int number = 0;
+		int squareOfNumber = 0;
 		
 		// Determines numbers
 		while ( squareOfNumber < 12000 )
 		{
 			number++;
-			squareOfNumber = Math.pow ( number , 2 );
+			squareOfNumber = ( int ) Math.pow ( number , 2 );
 		}
 		
+		int result = number; 
+	
 		// Displays result
-		System.out.printf( "%.0f is the smallest number that its square bigger than 12000\n" , number );
+		System.out.printf( "%d is the smallest number that its square bigger than 12000\n" , result );
 	}
 }
