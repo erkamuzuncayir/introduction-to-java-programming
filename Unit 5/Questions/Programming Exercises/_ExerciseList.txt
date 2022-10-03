@@ -1,0 +1,38 @@
+Unit 5 - Exercise List
+
+5.1 - PrintsPentagonalNumbers.java
+5.2 - SumsDigitsAnInteger.java
+5.3 - FindPalindrome.java
+5.4 - FindAndDisplayReversedNumber.java
+5.5 - SortThreeNumbers.java
+5.6 - DisplayPattern.java
+5.7 - ComputeFIV.java
+5.8 - ConversionBetweenCelsiusAndFahrenheit.java
+5.9 - ConversionBetweenFeetAndMeters.java
+5.10 - FindPrime.java
+5.11 - ComputeCommision.java
+5.12 - DisplayCharacters.java
+5.13 - SumSeries.java
+5.14 - ComputeSeries.java
+5.15 - PrintTaxTable.java
+5.16 - FindNumberOfDaysInAYear.java
+5.17 - DisplayMatrix0And1.java
+5.18 - FindSquareRoot.java
+5.19 - ValidateTriangle.java
+5.20 - PrintSinCosTable.java
+5.21 - ComputeMeanAndStandartDeviation.java
+5.22 - ApproximateSquareRoot.java
+5.23 - GenerateRandomChars.java
+5.24 - DisplayCurrentDateAndTime.java
+5.25 - ConvertMillisecondsToOthers.java
+5.26 - FindPalindromicPrime.java
+5.27 - FindEmirp.java
+5.28 - FindMersennePrimeNumbers.java
+5.29 - PlayCraps.java
+5.30 - FindTwinPrimes.java
+5.31 - ValidateCreditCardNumber.java
+5.32 - PlayCraps10000Times.java
+5.33 - DisplayCurrentDateAndTime.java ( Same solution with 5.24 )
+5.34 - PrintCalendar.java
+5.35 - CalculateAreaOfAPentagon.java
+5.36 - CalculateAreaOfARegularPolygon.java
