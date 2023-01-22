@@ -1,0 +1,13 @@
+Exercise_8_1 - Rectangle
+Exercise_8_2 - Stock
+Exercise_8_3 - DateClassExercise
+Exercise_8_4 - GregorianCalendarClassExercise
+Exercise_8_5 - RandomClassExercise
+Exercise_8_6 - PrintCalendar
+Exercise_8_7 - Account
+Exercise_8_8 - Fan
+Exercise_8_9 - RegularPolygon
+Exercise_8_10 - QuadraticEquations
+Exercise_8_11 - LinearEquations
+Exercise_8_12 - Intersection // I can't solve this exercise.
+Exercise_8_13 - Location
