@@ -1,0 +1,23 @@
+Exercise_7_1 - SumOfAllNumbersOfMatrix
+Exercise_7_2 - SumOfMajorDiagonalOfMatrix
+Exercise_7_3 - SortStudentsGrades
+Exercise_7_4 - ComputeWeeklyHoursOfEachEmployee
+Exercise_7_5 - SumOfTwoMatrices
+Exercise_7_6 - ProductOfTwoMatrices
+Exercise_7_7 - FindNearestPoints
+Exercise_7_8 - FindAllNearestPointsWithSameDistance
+Exercise_7_9 - PlayTicTacToeGame
+Exercise_7_10 - CreateRandomTicTacToe
+Exercise_7_11 - SimulateNineHeadsAndTails
+Exercise_7_12 - ComputeTax
+Exercise_7_13 - LocateTheLargestElement
+Exercise_7_14 - ExploreMatrix
+Exercise_7_15 - CheckWhetherSameLineOrNot
+Exercise_7_16 - SortTwoDimensionalArray
+Exercise_7_17 - FindBanktruptBanks
+Exercise_7_18 - ShuffleMatrix
+Exercise_7_19 - FindConsecutiveFourNumbers
+Exercise_7_20 - PlayConnectFour
+Exercise_7_21 - FindMultipleSudokuSolutions - SOLUTION DIDN'T COMPLETE
+Exercise_7_22 - FindInverseOf2x2Matrix
+Exercise_7_23 - FindInverseOf3x3Matrix
