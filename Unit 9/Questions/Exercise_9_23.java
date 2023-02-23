@@ -2,6 +2,7 @@
 
 public class MyString1
 {	
+<<<<<<< Updated upstream
 	final int SLOW = 1;
 	final int MEDIUM = 2;
 	final int FAST = 3;
@@ -61,5 +62,58 @@ public class MyString1
 			output = "Fan is off.";
 		
 		return output;
+=======
+
+	char[] internedString;
+	
+	public MyString1( char[] chars )
+	{
+		internedString = new[ chars.length ];
+		for( int i = 0; chars.length; i++ )
+			internedString[ i ] = chars[ i ];
+	}
+	
+	public char charAt( int index )
+	{
+		return internedString[ index ];
+	}
+	
+	public int length()
+	{
+		return internedString.length;
+	}
+	
+	public MyString1 substring( int begin, int end )
+	{
+		MyString1[] substring = new MyString1[ end - begin ];
+		for( int i = begin; i < end ; i++ )
+		{
+			substring[ i ] = internedString[ i ];
+		}
+		
+		return substring;
+	}
+	
+	public MyString1 toLowerCase()
+	{
+		for( int i = 0; i < internedString.length; i++ )
+			Character.toLowerCase( internedString[ i ] );
+	}
+	
+	public boolean equals( MyString1 s )
+	{
+		for( int i = 0; i < MyString1.length; i++ )
+		{
+			if( internedString[ i ] != MyString1[ i ] )
+				return false;
+		}
+		
+		return true;
+	}
+	
+	public static MyString1 valueOf( int i )
+	{
+		return 
+>>>>>>> Stashed changes
 	}
 }
