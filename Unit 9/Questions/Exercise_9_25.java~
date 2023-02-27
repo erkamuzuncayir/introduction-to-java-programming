@@ -15,7 +15,7 @@ public class Exercise_9_25
 {
 	public static void main( String[] args )
 	{
-		MyCharacter c1 = new MyCharacter( 'A' );
+		MyCharacter c1 = new MyCharacter( 'Z' );
 		
 		System.out.println( MyCharacter.isDigit( c1 ) );
 		System.out.println( MyCharacter.isLetter( c1 ) );

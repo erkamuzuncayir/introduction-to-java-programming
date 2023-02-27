@@ -18,7 +18,7 @@ public class MyCharacter
 			this.ch = ch;
 		}
 		
-		public char charValue()
+			public char charValue()
 		{
 			return ch;
 		}
