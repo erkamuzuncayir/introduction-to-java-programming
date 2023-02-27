@@ -1,0 +1,28 @@
+/* Chapter 9 - Exercise 27 | MyStringBuilder2
+
+public MyStringBuilder2();
+public MyStringBuilder2(char[] chars);
+public MyStringBuilder2(String s);
+public MyStringBuilder2 insert(int offset, MyStringBuilder2 s);
+public MyStringBuilder2 reverse();
+public MyStringBuilder2 substring(int begin);
+public MyStringBuilder2 toUpperCase();
+
+*/
+
+public class Exercise_9_27
+{
+	public static void main( String[] args )
+	{
+		char[] s_b = new char[ 4 ];
+		java.util.Arrays.fill( s_b, 'g' );
+		MyStringBuilder2 s_b_empty = new MyStringBuilder2();
+		MyStringBuilder2 s_b_str = new MyStringBuilder2( "the one" );
+		MyStringBuilder2 s_b_arr = new MyStringBuilder2( s_b );
+		
+		s_b_arr.insert( 2, s_b_str ).println();
+		s_b_str.reverse().println();
+		s_b_str.substring( 3 ).println();
+		s_b_arr.toUpperCase().println();
+	}
+}
