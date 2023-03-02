@@ -1,5 +1,4 @@
 // Chapter 9 - Exercise 16 | ReformatSourceCodeToEndLine
-// Unsolved
 
 import java.util.*;
 import java.io.*;
@@ -9,26 +8,33 @@ public class Exercise_9_16
 	public static void main( String[] args ) throws Exception
 	{
 		File sourceFile = new File( args[ 0 ] );
-		
 		Scanner input = new Scanner( sourceFile );
 		StringBuilder strBld = new StringBuilder();
-		boolean addBrackets = false;
 		
 		while( input.hasNext() )
 		{
-			String str = input.nextLine();
-			if( !str.endsWith( "{" ) && !str.endsWith( "}" ) &&
-					!str.endsWith( ";" )  && !str.startsWith( "/" ) )
-			{
-				strBld.append( str );
-				strBld.append( " {" );
-			}
-			else if( str.indexOf( "{" < 0 ) )
-				strBld.append( str );
-			
-			strBld.append( "\n" );
+			strBld.append( input.nextLine() );
 		}
 		
+		/* It starts from -1 because 
+			when if it have one bracket we don't use \t.*/
+		int bracketCount = -1;
+		for( int i = 0; i < strBld.length(); i++ )
+		{
+			if( strBld.charAt( i ) == '{' )
+			{
+				strBld.insert( ++i, "\n" );
+				bracketCount++;
+			}
+			else if( strBld.charAt( i ) == '}' )
+			{
+				strBld.insert( i++, "\n" );
+				for( int j = 0; j < bracketCount; j++ )
+					strBld.insert( i++, "\t" );
+
+				bracketCount--;
+			}
+		}
 		PrintWriter output = new PrintWriter( sourceFile );
 		output.println( strBld.toString() );
 		output.close();

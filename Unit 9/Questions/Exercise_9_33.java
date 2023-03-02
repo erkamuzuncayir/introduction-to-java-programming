@@ -1,14 +1,18 @@
 // Chapter 9 - Exercise 31 | PlayHangman
 
+import java.io.File;
 import java.util.Scanner;
 
-public class Exercise_9_31
+public class Exercise_9_33
 {
-	public static void main( String[] args )
+	public static void main( String[] args ) throws Exception
 	{
+		// Scanner for player input
 		Scanner input = new Scanner( System.in );
-		String[] words = { "fair", "horseshoe", "infrastructure", "record", 
-							"pardon", "concede", "cap", "cheat", "nature" };
+		// File and scanner for getting input from file
+		File sourceFile = new File( args[ 0 ] );
+		Scanner inputFile = new Scanner( sourceFile );
+		String[] words = inputFile.nextLine().split( " " );
 		String[] used_words = new String[ words.length ];
 		
 		// Keep playing until player say "n".
